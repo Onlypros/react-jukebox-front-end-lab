@@ -27,7 +27,7 @@ const App = () => {
     try {
       const newTrack = await trackService.create(dataFromTheForm)
       console.log(newTrack, " <-- response from the server")
-      setTracks([...tracks, newTrack])
+      setTracks([...tracks, newTrack.data])
     } catch(err){
       console.log(err, ' <- err in handleAddTrack')
     }

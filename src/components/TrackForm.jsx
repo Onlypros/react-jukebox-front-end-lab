@@ -1,8 +1,6 @@
 import { useState } from "react";
-import {useNavigate} from "react-router-dom"
 
 export default function TrackForm(props) {
-    let navigate = useNavigate()
     const [formData, setFormData] = useState({
     title: "",
     artist: "",
@@ -24,7 +22,6 @@ export default function TrackForm(props) {
       title: "",
       artist: "",
     });
-    navigate("/")
   }
   
   return (
